@@ -1,3 +1,7 @@
+# THIS FORK
+
+Up-to-date fork of the original https://github.com/saladpanda/homeassistant-entity-renamer, but I've also integrated the Friendly Name rename capability (`-f` switch) from https://github.com/mattmattmatt/homeassistant-entity-rename
+
 # HomeAssistant Entity Renamer
 
 This project provides a Python script that allows you to list and rename entities in HomeAssistant based on regular expressions. It leverages the HomeAssistant API and WebSockets to interact with the HomeAssistant server.
