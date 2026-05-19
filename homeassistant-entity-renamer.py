@@ -209,7 +209,7 @@ def process_friendly_names(entity_data, search_regex, replace_regex=None):
     print(tabulate.tabulate(table, headers="firstrow", tablefmt="github"))
 
     # Ask user for confirmation if replace_regex is provided
-    if not replace_regex:
+    if replace_regex is None:
         return
 
     answer = input(
