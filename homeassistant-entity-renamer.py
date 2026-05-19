@@ -140,7 +140,7 @@ def rename_entities(rename_data):
             "id": index,
             "type": "config/entity_registry/update",
             "entity_id": entity_id,
-            "new_entity_id": new_entity_id
+            "new_entity_id": None if new_entity_id == "" else new_entity_id
         })
         ws.send(entity_registry_update_msg)
         update_result = ws.recv()
@@ -246,7 +246,7 @@ def rename_friendly_names(rename_data):
                 "type": "config/entity_registry/update",
                 "entity_id": entity_id,
                 "new_entity_id": entity_id,
-                "name": friendly_name,
+                "name": None if friendly_name == "" else friendly_name,
             }
         )
         ws.send(entity_registry_update_msg)
